@@ -6,25 +6,28 @@ import "./AccordionBody.css";
 
 const AccordionBody = ({ item, isOpen, onClick }) => {
   return (
-    <div className="">
+    <div className="flex flex-col gap-4">
       <div
         onClick={onClick}
-        className="flex items-cente justify-between w-full accordion-header py-2 px-1"
+        className="flex flex-col  items-center justify-between w-full accordion-header px-4 py-3 "
       >
-        {item.categoryTitle}
-        <span>{isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}</span>
-      </div>
-      {isOpen && (
+       <div className="flex items-center justify-between w-full  text-lg font-medium ">
+       {item.categoryTitle}
+       <span>{isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}</span>
+       </div> 
+        {isOpen && (
         <div
-          style={{ padding: "10px", border: "1px solid #ccc" }}
-          className="my-4"
+          
+          className="flex flex-col my-4 rounded-lg px-4 py-3 acc-body"
         >
-          <p>{item.categoryDescription}</p>
+          <p className="my-3 text-lg">{item.categoryDescription}</p>
           {item.tickets.map((ticket, index) => (
             <TicketCard key={index} ticketData={ticket} />
           ))}
         </div>
       )}
+      </div>
+      
     </div>
   );
 };

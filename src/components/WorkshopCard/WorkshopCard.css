@@ -6,9 +6,15 @@
   background: #fff;
   border: 0.8px solid #cacaca;
   border-radius: 5px;
-  width: 30%;
+  width: 28%;
+  flex: 1;
 }
 .speaker-image {
   width: 30px;
   height: 30px;
+ 
+}
+.ws-speaker-img{
+  width: 120px;
+  height: 100px;
 }

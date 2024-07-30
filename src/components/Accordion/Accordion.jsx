@@ -12,7 +12,7 @@ const Accordion = () => {
     }
   };
   return (
-    <div className="flex  flex-col gap-7">
+    <div className="flex  flex-col gap-7 ">
       {accordionData.map((item) => (
         <AccordionBody
           onClick={() => handleItemClick(item.id)}

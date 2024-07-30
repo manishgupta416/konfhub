@@ -7,12 +7,12 @@
 .category-img {
   border-radius: 8px;
   border: 0.8px solid rgb(202, 202, 202);
-  width: 280px;
+  width: 350px;
   height: 180px;
 }
 .hr-line {
   border: 0.8px solid #b4b4b4;
   height: 1px;
-  width: 80%;
-  opacity: 0.6;
+  width: 90%;
+  opacity: 0.4;
 }

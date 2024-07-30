@@ -2,7 +2,7 @@
   width: 24%;
 }
 .left-side {
-  width: 74%;
+  width: 73%;
 }
 .buy-btn {
   padding: 10px 30px;
@@ -23,4 +23,14 @@
   color: #000;
   background-color: #fff;
   border: 1px solid black;
+}
+.sticky-container {
+  position: relative;
+  
+}
+
+.sticky {
+  position: sticky;
+  top: 0px;
+
 }

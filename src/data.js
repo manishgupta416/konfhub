@@ -156,6 +156,8 @@ export const workshopDetails = [
     title: "How to make more money",
     eventDate: "Jun 11th, 2024 at 10:00 AM (IST)",
     desc: "This is the description of a workshop.",
+    location:'KonfHub Technologies, Nagavarapalya, C V Raman Nagar, Bengaluru, Karnataka, India',
+
     speakerDetails: [
       {
         id: 1,
@@ -180,6 +182,8 @@ export const workshopDetails = [
     title: "How to fight crime",
     desc: "This is the description of a workshop.",
     eventDate: "Jun 1st, 2034 at 10:00 AM (IST)",
+    url:'https://darkknight.in',
+
     speakerDetails: [
       {
         id: 1,

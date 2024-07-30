@@ -1,14 +1,15 @@
 .ticket-section {
   width: 100%;
-  background-color: #f6f6fc;
-  padding: 20px 40px;
+
+  
 }
 
 .tickets-cards {
-  max-width: 700px;
+  max-width: 750px;
   margin: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  background-color: #f6f6fc;
 }

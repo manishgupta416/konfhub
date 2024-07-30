@@ -61,40 +61,39 @@ const EventDetailContainer = () => {
   }
 
   return (
-    <div className="event-details-container">
-      EventDetailContainer
-      <div className="event-details-card">
-        <h1>{data?.name}</h1>
-        <div className="flex gap-10 w-full items-center">
-          <p className="w-1/3 flex gap-5 items-center">
+    <div className="event-details-container flex flex-col gap-6 ">
+      <div className="event-details-card py-2 px-3">
+        <h1 className="font-bold text-2xl my-2">{data?.name}</h1>
+        <div className="flex gap-6 w-full items-center">
+          <p className="w-1/3 flex gap-3 items-center">
             <span>
               <BsCameraVideoFill />
             </span>{" "}
             Online
           </p>
-          <p className="w-1/3 flex gap-5 items-center">
+          <p className="w-1/3 flex gap-3 items-center">
             <span>
               <MdPaid />
             </span>{" "}
             Paid
           </p>
         </div>
-        <div className="flex gap-10 w-full items-center">
-          <p className="w-1/3 flex gap-5 items-center">Event Live Link :</p>
-          <p className="w-1/3 flex gap-5 items-center">
+        <div className="inline-block my-2  w-full items-center">
+          <p className="w-1/3 inline  items-center font-medium text-lg  mr-2 ">Event Live Link :</p>
+          <p className="w-1/3 inline   items-center">
             <a
               href={data?.event_live_link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500"
+              className="text-blue-500 underline"
             >
               Open streaming website
             </a>
           </p>
         </div>
-        <div className="flex gap-10 w-full items-center">
-          <p className="flex gap-5 items-center flex-wrap">Date :</p>
-          <p className="flex gap-5 items-center flex-wrap">
+        <div className="inline-block my-2 w-full items-center">
+          <p className="inline items-center mr-2  flex-wrap">Date :</p>
+          <p className="inline  flex-wrap">
             <span>
               <span>
                 {convertDateString(`${data?.start_date} ${data?.start_time}`)}{" "}
@@ -102,16 +101,16 @@ const EventDetailContainer = () => {
               <span></span>
             </span>
             -
-            <span>
+            <span className="mx-2">
               <span>
                 {convertDateString(`${data?.end_date} ${data?.end_time}`)}{" "}
               </span>
             </span>
           </p>
         </div>
-        <div className="event-starts">
-          <p>EVENT STARTS IN</p>
-          <strong>
+        <div className="event-starts flex flex-col gap-2 my-3">
+          <p className="text-xl">EVENT STARTS IN</p>
+          <strong  className=" font-bold text-2xl " >
             {timeDifference.days}D : {timeDifference.hours}H :{" "}
             {timeDifference.minutes}M : {timeDifference.seconds}S
           </strong>
