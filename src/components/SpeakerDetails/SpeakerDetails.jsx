@@ -1,18 +1,17 @@
 import PropTypes from "prop-types";
 import "./SpeakerDetails.css";
 const SpeakerDetails = ({ speakerDetails }) => {
-  console.log(speakerDetails, "speakerDetails");
   return (
     <>
-      <div className="speaker-card flex flex-col gap-6 py-3 px-2">
+      <div className="speaker-card lg:flex-row md:flex-col sm:flex-col flex gap-6 py-3 px-2 lg:w-1/2 md:w-1/2 sm:w-full">
         <div className="speaker-img">
           <img src={speakerDetails?.image} alt="" />
         </div>
-        <div className="speaker-details">
+        <div className="speaker-details flex gap-1 flex-col">
           <div className="speaker-name">{speakerDetails.name}</div>
           <div className="speaker-title">{speakerDetails.title}</div>
           <div className="speaker-company">{speakerDetails.company}</div>
-          <div className="social-links">
+          <div className="social-links flex gap-3 my-3 items-center">
             <a
               href={speakerDetails.socials.facebook}
               target="_blank"

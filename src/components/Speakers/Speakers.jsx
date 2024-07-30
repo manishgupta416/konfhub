@@ -18,12 +18,14 @@ const Speakers = () => {
     <div>
       <h1>{data?.speaker_section_title}</h1>
       <p className="my-4">{parse(sanitizedDescription)}</p>
-      {speakerDetails.map((speakerDetails) => (
-        <SpeakerDetails
-          key={speakerDetails.id}
-          speakerDetails={speakerDetails}
-        />
-      ))}
+      <div className="speakers-list flex gap-4 justify-between lg:flex-row md:flex-row sm:flex-col ">
+        {speakerDetails.map((speakerDetails) => (
+          <SpeakerDetails
+            key={speakerDetails.id}
+            speakerDetails={speakerDetails}
+          />
+        ))}
+      </div>
     </div>
   );
 };

@@ -3,6 +3,8 @@
   border: 0.8px solid #cacaca;
 }
 .speaker-img {
+  width: 180px;
+  height: 180px;
 }
 .speaker-details {
 }

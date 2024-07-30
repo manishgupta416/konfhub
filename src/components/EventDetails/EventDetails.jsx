@@ -9,6 +9,7 @@ import Speakers from "../Speakers/Speakers";
 
 const EventDetails = () => {
   const { data } = useContext(DataContext);
+
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
@@ -18,60 +19,40 @@ const EventDetails = () => {
 
   return (
     <div>
-      <div className="event-poster p-2 ">
+      <div className="event-poster p-2">
         <img src={data?.event_poster_url} alt="poster" className="rounded-md" />
       </div>
       <div className="button-group">
-        <button
-          className="btn "
-          id="About"
-          onClick={() => scrollToSection("About")}
-        >
+        <button className="btn" onClick={() => scrollToSection("about")}>
           About
         </button>
-        <button
-          className="btn "
-          id="Tickets"
-          onClick={() => scrollToSection("About")}
-        >
+        <button className="btn" onClick={() => scrollToSection("tickets")}>
           Tickets
         </button>
-        <button
-          className="btn "
-          id="speakers"
-          onClick={() => scrollToSection("speakers")}
-        >
-          This is speakers section
+        <button className="btn" onClick={() => scrollToSection("speakers")}>
+          Speakers
         </button>
-        <button
-          className="btn "
-          id="workshop"
-          onClick={() => scrollToSection("workshop")}
-        >
-          This is workshop section
+        <button className="btn" onClick={() => scrollToSection("workshop")}>
+          Workshop
         </button>
-        <button
-          className="btn "
-          id="sponsors"
-          onClick={() => scrollToSection("sponsors")}
-        >
-          This is event sponsors
+        <button className="btn" onClick={() => scrollToSection("sponsors")}>
+          Sponsors
         </button>
       </div>
       <div className="sections">
-        <div className="" id="About">
+        <div id="about">
           <About />
         </div>
-        <div className="" id="Tickets">
+        <div id="tickets">
           <Ticket />
         </div>
-        <div className="" id="speakers">
+        <div id="speakers">
           <Speakers />
         </div>
-        <div className="" id="workshop">
+        <div id="workshop">
           <Workshops />
         </div>
-        <div className="" id="sponsors">
+        <div id="sponsors">
           <Sponsors />
         </div>
       </div>

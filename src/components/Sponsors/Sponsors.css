@@ -1,0 +1,18 @@
+.sponsor-img {
+  border-radius: 8px;
+  border: 0.8px solid rgb(202, 202, 202);
+  width: 240px;
+  height: 150px;
+}
+.category-img {
+  border-radius: 8px;
+  border: 0.8px solid rgb(202, 202, 202);
+  width: 280px;
+  height: 180px;
+}
+.hr-line {
+  border: 0.8px solid #b4b4b4;
+  height: 1px;
+  width: 80%;
+  opacity: 0.6;
+}
