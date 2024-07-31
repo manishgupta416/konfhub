@@ -12,7 +12,7 @@ const Home = () => {
       <div className="relative">
         <Navbar />
       </div>
-      <div className=" gap-7 p-5 flex flex-col lg:flex-row md:flex-col sm:flex-col xs:flex-col ">
+      <div className=" gap-7 p-5 content-container flex flex-col lg:flex-row md:flex-col sm:flex-col xs:flex-col ">
         <div className="left-side p-4 pt-0   ">
           <EventDetails />
         
