@@ -89,13 +89,29 @@ export const accordionData = [
         price: "₹1,000",
         action: "Register",
       },
+      {
+        id: 2,
+        title: "Paid Ticket",
+        description:
+          "This is a ticket description. This is a paid ticket. This ticket is uncategorised.",
+        venue: {
+          name: "KonfHub Technologies",
+          address: "Nagavarapalya, C V Raman Nagar, Bengaluru, Karnataka, India",
+          additionalDetails: "This is additional venue details.",
+        },
+        availability: {
+          till: "31st Aug 2034, 06:00 PM IST",
+        },
+        price: "₹1,000",
+        action: "Register",
+      },
     ],
   },
   {
     id: 2,
-    categoryTitle: "This is a category",
+    categoryTitle: "This is also a category. But with a little longer name. Also note, this category expanded by default.",
     categoryDescription:
-      "This is also a category. But with a little longer name. Also note, this category expanded by default.",
+      "This is category description. This category is expanded by default. This is a little longer description. Adding more content to make the description look longer. Adding more content to make the description look longer. Adding more content to make the description look longer. Adding more content to make the description look longer. Adding more content to make the description look longer. Adding more content to make the description look longer.",
     tickets: [
       {
         id: 4,
@@ -112,6 +128,22 @@ export const accordionData = [
           till: "31st Aug 2034, 06:00 PM IST",
         },
         price: "₹1,000",
+        action: "Register",
+      },
+      {
+        id: 1,
+        title: "Free Ticket",
+        description:
+          "This is a ticket description. This is a free ticket. This ticket is uncategorised.",
+        venue: {
+          name: "KonfHub Technologies",
+          address: "Nagavarapalya, C V Raman Nagar, Bengaluru, Karnataka, India",
+          additionalDetails: "This is additional venue details.",
+        },
+        availability: {
+          till: "31st Aug 2034, 06:00 PM IST",
+        },
+        price: "₹0",
         action: "Register",
       },
     ],

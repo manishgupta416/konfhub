@@ -18,7 +18,7 @@ const AccordionBody = ({ item, isOpen, onClick }) => {
         {isOpen && (
         <div
           
-          className="flex flex-col my-4 rounded-lg px-4 py-3 acc-body"
+          className="flex flex-col gap-6 my-4 rounded-lg px-4 py-3 acc-body"
         >
           <p className="my-3 text-lg">{item.categoryDescription}</p>
           {item.tickets.map((ticket, index) => (
