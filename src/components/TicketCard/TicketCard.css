@@ -6,11 +6,18 @@
 
   padding: 5px;
 }
+.icon-m{
+  margin-top:5px
+}
 
 @media screen and (max-width: 420px) {
   .down{
     flex-direction: column;
     justify-self: flex-start;
     align-items: flex-start !important;
+  }
+  .ticket-card{
+    padding-left:10px ;
+    padding-right:10px ;
   }
 }

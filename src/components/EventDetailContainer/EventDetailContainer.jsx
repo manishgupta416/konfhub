@@ -79,7 +79,9 @@ const EventDetailContainer = () => {
           </p>
         </div>
         <div className="inline-block my-2  w-full items-center">
-          <p className="w-1/3 inline  items-center font-medium text-lg  mr-2 ">Event Live Link :</p>
+          <p className="w-1/3 inline  items-center font-medium text-lg  mr-2 ">
+            Event Live Link :
+          </p>
           <p className="w-1/3 inline   items-center">
             <a
               href={data?.event_live_link}
@@ -110,7 +112,7 @@ const EventDetailContainer = () => {
         </div>
         <div className="event-starts flex flex-col gap-2 my-3">
           <p className="text-xl">EVENT STARTS IN</p>
-          <strong  className=" font-bold text-2xl " >
+          <strong className=" font-bold text-2xl ">
             {timeDifference.days}D : {timeDifference.hours}H :{" "}
             {timeDifference.minutes}M : {timeDifference.seconds}S
           </strong>

@@ -25,7 +25,9 @@ const About = () => {
     <>
       <div className="flex-col gap-10 py-10">
         <strong className="font-bold text-2xl my-6">ABOUT EVENT</strong>
-        <p className="desc flex flex-col text-lg gap-10 my-10">{parse(sanitizedDescription)}</p>
+        <p className="desc flex flex-col text-lg gap-10 my-10">
+          {parse(sanitizedDescription)}
+        </p>
       </div>
     </>
   );

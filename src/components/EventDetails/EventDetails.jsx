@@ -32,56 +32,44 @@ const EventDetails = () => {
         />
       </div>
       <div className="lg:none block show">
-        <EventDetailContainer/>
+        <EventDetailContainer />
         <button className="buy-btn my-3 w-full">Buy Now</button>
-            <a href="#" className="my-2">
-              <button className="official-btn flex gap-6 items-center justify-center w-full">
-                <span>
-                  <FaExternalLinkAlt />
-                </span>
-                Official Website
-              </button>
-            </a>
+        <a href="#" className="my-2">
+          <button className="official-btn flex gap-6 items-center justify-center w-full">
+            <span>
+              <FaExternalLinkAlt />
+            </span>
+            Official Website
+          </button>
+        </a>
       </div>
       <div className="button-group">
         <button
-          className={`btn  ${
-            activeSection === "about" ? "active" : ""
-          }`}
+          className={`btn  ${activeSection === "about" ? "active" : ""}`}
           onClick={() => scrollToSection("about")}
         >
           About
         </button>
         <button
-          className={`btn  ${
-            activeSection === "tickets" ? "active" : ""
-          }`}
+          className={`btn  ${activeSection === "tickets" ? "active" : ""}`}
           onClick={() => scrollToSection("tickets")}
         >
           Tickets
         </button>
         <button
-          className={`btn  ${
-            activeSection === "speakers" ? "active" : ""
-          }`}
+          className={`btn  ${activeSection === "speakers" ? "active" : ""}`}
           onClick={() => scrollToSection("speakers")}
         >
           This is speakers section
-
         </button>
         <button
-          className={`btn  ${
-            activeSection === "workshop" ? "active" : ""
-          }`}
+          className={`btn  ${activeSection === "workshop" ? "active" : ""}`}
           onClick={() => scrollToSection("workshop")}
         >
-         This is workshop section
-        
+          This is workshop section
         </button>
         <button
-          className={`btn  ${
-            activeSection === "sponsors" ? "active" : ""
-          }`}
+          className={`btn  ${activeSection === "sponsors" ? "active" : ""}`}
           onClick={() => scrollToSection("sponsors")}
         >
           This is event sponsors
@@ -105,7 +93,7 @@ const EventDetails = () => {
         </div>
         <div className="show lg:none mb-6">
           <HostDetails />
-          </div>
+        </div>
       </div>
     </div>
   );

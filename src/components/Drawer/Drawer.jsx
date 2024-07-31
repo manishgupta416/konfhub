@@ -27,8 +27,7 @@ export const Drawer = ({ isOpen, onClose, children }) => {
           onClick={onClose}
           className="absolute top-0 right-0 mt-4 mr-4 text-gray-600"
         >
-         <VscChromeClose />
-
+          <VscChromeClose />
         </button>
         <div className="p-4">{children}</div>
       </div>

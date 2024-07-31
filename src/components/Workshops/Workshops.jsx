@@ -15,10 +15,12 @@ const Workshops = () => {
   );
   return (
     <div>
-      <h1 className="font-bold text-2xl my-3">{data?.workshop_section_title}</h1>
+      <h1 className="font-bold text-2xl my-3">
+        {data?.workshop_section_title}
+      </h1>
       <p className="my-7 text-lg">{parse(sanitizedDescription)}</p>
       <div className="flex flex-wrap gap-5">
-        {workshopDetails.map((data) => (
+        {workshopDetails?.map((data) => (
           <WorkshopCard key={data.id} data={data} />
         ))}
       </div>

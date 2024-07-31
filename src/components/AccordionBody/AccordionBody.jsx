@@ -11,23 +11,19 @@ const AccordionBody = ({ item, isOpen, onClick }) => {
         onClick={onClick}
         className="flex flex-col  items-center justify-between w-full accordion-header px-4 py-3 "
       >
-       <div className="flex items-center justify-between w-full  text-lg font-medium ">
-       {item.categoryTitle}
-       <span>{isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}</span>
-       </div> 
-        {isOpen && (
-        <div
-          
-          className="flex flex-col gap-6 my-4 rounded-lg px-4 py-3 acc-body"
-        >
-          <p className="my-3 text-lg">{item.categoryDescription}</p>
-          {item.tickets.map((ticket, index) => (
-            <TicketCard key={index} ticketData={ticket} />
-          ))}
+        <div className="flex items-center justify-between w-full  text-lg font-medium ">
+          {item.categoryTitle}
+          <span>{isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}</span>
         </div>
-      )}
+        {isOpen && (
+          <div className="flex flex-col gap-6 my-4 rounded-lg px-4 py-3 acc-body">
+            <p className="my-3 text-lg">{item?.categoryDescription}</p>
+            {item?.tickets?.map((ticket, index) => (
+              <TicketCard key={index} ticketData={ticket} />
+            ))}
+          </div>
+        )}
       </div>
-      
     </div>
   );
 };

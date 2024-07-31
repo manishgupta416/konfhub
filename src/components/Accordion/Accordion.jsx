@@ -13,12 +13,12 @@ const Accordion = () => {
   };
   return (
     <div className="flex  flex-col gap-7 ">
-      {accordionData.map((item) => (
+      {accordionData?.map((item) => (
         <AccordionBody
-          onClick={() => handleItemClick(item.id)}
-          key={item.id}
+          onClick={() => handleItemClick(item?.id)}
+          key={item?.id}
           item={item}
-          isOpen={selectedIndex.includes(item.id)}
+          isOpen={selectedIndex.includes(item?.id)}
         />
       ))}
     </div>
