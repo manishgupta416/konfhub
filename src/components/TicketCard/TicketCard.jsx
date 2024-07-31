@@ -26,7 +26,7 @@ const TicketCard = ({ ticketData }) => {
       </p>
       <p className="event-details my-2">{additionalDetails}</p>
       <p className="event-available px-2 py-1 text-sm rounded-md w-fit">Available Till: {till}</p>
-      <div className="flex  items-center justify-between my-4">
+      <div className="flex  items-center down justify-between my-4">
         <p className="ticket-price text-3xl font-medium my-2">{price}</p>
         <button className="bg-black text-white  px-6 py-2 flex justify-center items-start text-center rounded">
           {action}

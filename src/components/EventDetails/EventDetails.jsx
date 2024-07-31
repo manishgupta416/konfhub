@@ -87,7 +87,7 @@ const EventDetails = () => {
           This is event sponsors
         </button>
       </div>
-      <div className="sections flex flex-col gap-10">
+      <div className="sections flex flex-col gap-10 ">
         <div id="about">
           <About />
         </div>
@@ -103,7 +103,7 @@ const EventDetails = () => {
         <div id="sponsors">
           <Sponsors />
         </div>
-        <div className="show lg:none">
+        <div className="show lg:none mb-6">
           <HostDetails />
           </div>
       </div>

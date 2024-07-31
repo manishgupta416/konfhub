@@ -53,7 +53,8 @@ const SpeakerDetails = ({ speakerDetails }) => {
           </div>
         </div>
         <Drawer isOpen={drawerOpen} onClose={toggleDrawer}>
-          <div className="flex flex-col md:flex-row gap-6 mb-6 items-center">
+         <div className="flex flex-col items-start">
+         <div className="flex flex-col md:flex-row gap-4 mb-6 items-center">
             <div className="speaker-img">
               <img className="rounded-lg" src={speakerDetails?.image} alt="" />
             </div>
@@ -95,7 +96,7 @@ const SpeakerDetails = ({ speakerDetails }) => {
               </div>
             </div>
           </div>
-          <p>This is the description of the speaker.</p>
+          <p>This is the description of the speaker.</p></div> 
         </Drawer>
       </div>
 

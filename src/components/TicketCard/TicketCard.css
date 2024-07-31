@@ -6,3 +6,11 @@
 
   padding: 5px;
 }
+
+@media screen and (max-width: 420px) {
+  .down{
+    flex-direction: column;
+    justify-self: flex-start;
+    align-items: flex-start !important;
+  }
+}

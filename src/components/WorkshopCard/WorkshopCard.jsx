@@ -37,13 +37,13 @@ const WorkshopCard = ({ data }) => {
     setDrawerOpen(!drawerOpen);
   };
   return (
-    <div className="workshop-card flex flex-col gap-4 py-3 px-5">
+    <div className="workshop-card flex flex-col gap-4 py-3 px-5 col-12 col-md-6 col-lg-4 col-xxl-4 w-full md:w-1/2 lg:w-1/2 xl:w-1/3">
       <div className="workshop-image">
         <img src={image} className="h-full w-full object-contain" alt="" />
       </div>
       <div className="workshop-details flex flex-col justify-between gap-2">
-        <h3 className="workshop-titl h-11 text-ellipsis font-medium text-xl">{title}</h3>
-        <p className="event-date inline-block  items-center my-4  whitespace-break-spaces ">
+      <h3 className="workshop-title h-11 overflow-hidden whitespace-nowrap  text-ellipsis font-medium text-xl w-full">{title}</h3>
+      <p className="event-date inline-block  items-center my-4  whitespace-break-spaces ">
           <span className="inline-block mr-1 mt-1">
             <BsCalendarEvent />
           </span>{" "}
@@ -100,12 +100,12 @@ const WorkshopCard = ({ data }) => {
                     </div> }
           <p className="event-desc">{desc}</p>
           <h2 className=" text-2xl font-medium">SPEAKERS</h2>
-          <div className="flex gap-5 flex-row">
+          <div className="flex gap-5 flex-row flex-wrap">
             {" "}
             {speakerDetails.map((speakerDetails) => (
               <div
                 key={speakerDetails.id}
-                className=" speaker-card item-center lg:flex-row md:flex-col sm:flex-col flex gap-6 py-3 px-2 lg:w-1/2 md:w-1/2 sm:w-full"
+                className=" speaker-card item-center  lg:flex-row md:flex-col sm:flex-col flex gap-6 py-3 px-2 lg:w-1/2 md:w-1/2 sm:w-full"
               >
                 <div className="ws-speaker-img ">
                   <img

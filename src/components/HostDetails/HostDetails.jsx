@@ -16,7 +16,7 @@ const HostDetails = () => {
     ALLOWED_TAGS: ["p", "div"],
   });
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 mb-4">
       <strong>HOSTED BY</strong>
       <div className="host-info-card ">
         <div className="organiser-name flex gap-5">

@@ -19,7 +19,7 @@ export const Drawer = ({ isOpen, onClose, children }) => {
         onClick={handleOverlayClick}
       ></div>
       <div
-        className={`fixed py-10 top-0 z-50 right-0 h-full w-1/2 bg-white shadow-lg transform transition-transform ${
+        className={`fixed py-10 top-0 z-50 right-0 h-full w-full overflow-auto sm:w-1/2 md:w-1/2 lg:w-1/2 bg-white shadow-lg transform transition-transform ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >

@@ -31,11 +31,11 @@ const Sponsors = () => {
           <hr className="hr-line" />
         </div>
         <div className="category-img">
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a href="#" target="_blank" rel="noopener noreferrer" className="w-full">
             <img
               src="https://dev-media.konfhub.com/sponsors/2024/June/10/1717977635909-75bb1d01-51a2-4af1-82cd-72d587192692.jpg"
               alt=""
-              className="object-cover h-full"
+              className="object-cover w-full h-full"
             />
           </a>
         </div>

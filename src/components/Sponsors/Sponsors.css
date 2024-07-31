@@ -16,3 +16,10 @@
   width: 90%;
   opacity: 0.4;
 }
+@media screen and (max-width: 1020px) {
+  .category-img {
+  
+    width: 290px;
+    height: 160px;
+  }
+}
