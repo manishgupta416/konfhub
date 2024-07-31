@@ -12,11 +12,12 @@ const Home = () => {
       <div className="relative">
         <Navbar />
       </div>
-      <div className="flex gap-7 p-5">
-        <div className="left-side p-4 pt-0">
+      <div className=" gap-7 p-5 flex flex-col lg:flex-row md:flex-col sm:flex-col xs:flex-col">
+        <div className="left-side p-4 pt-0   ">
           <EventDetails />
+        
         </div>
-        <div className="right-side flex flex-col  sticky-container  ">
+        <div  className="right-side hide-content  flex flex-col  sticky-container  ">
           <div className="sticky flex flex-col gap-5 ">
             <EventDetailContainer />
             <button className="buy-btn">Buy Now</button>

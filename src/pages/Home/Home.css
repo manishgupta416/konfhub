@@ -1,8 +1,8 @@
 .right-side {
-  width: 24%;
+  width: 30%;
 }
 .left-side {
-  width: 73%;
+  width: 65%;
 }
 .buy-btn {
   padding: 10px 30px;
@@ -29,8 +29,27 @@
   
 }
 
-.sticky {
-  position: sticky;
-  top: 0px;
 
+
+@media (max-width: 1020px) {
+  .right-side ,.left-side {
+    width: 100%;
+  }
+ 
 }
+@media (min-width: 1020px) {
+  .sticky {
+    position: sticky;
+    top: 0px;
+  
+  }
+ 
+}
+@media (max-width: 1020px) {
+  .hide-content {
+    display: none !important;
+  }
+}
+ 
+
+

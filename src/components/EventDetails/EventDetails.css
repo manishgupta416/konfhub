@@ -10,7 +10,7 @@
  
 }
 .button-group {
-  max-width: 95%;
+  max-width: 100%;
   display: flex;
   overflow: auto;
   gap: 10px;
@@ -34,4 +34,16 @@
 
 .btn.active {
   border-bottom: 2px solid #000; 
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1020px) {
+  .show {
+    display: block !important;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .show {
+    display: none !important;
+  }
 }
