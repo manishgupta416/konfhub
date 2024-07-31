@@ -11,7 +11,7 @@ const SpeakerDetails = ({ speakerDetails }) => {
   };
   return (
     <>
-      <div className="speaker-card flex flex-col md:flex-row gap-6 py-3 px-2 w-full md:w-1/2 lg:w-1/2 xl:w-1/3">
+      <div className="speaker-card flex flex-col md:flex-row gap-6 py-3 px-2 w-full md:w-1/2 lg-s xl:w-1/3">
       <div className="speaker-img cursor-pointer flex-shrink-0" onClick={toggleDrawer}>
           <img className="rounded-lg w-full md:w-48 lg:w-56 h-auto" src={speakerDetails?.image} alt="" />
         </div>
